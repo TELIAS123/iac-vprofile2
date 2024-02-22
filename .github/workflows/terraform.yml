@@ -22,7 +22,7 @@ env:
 
 jobs:
   terraform:
-    name: "Apply terraform code changes"
+    name: Apply terraform code changes
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -32,7 +32,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
       - name: Setup Terraform with specified version on the runner
-        uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v3
       - name: Terraform init
         id: init
         run: terraform init -backend-config="bucket=${BUCKET_TF_STATE}"   # Corrected interpolation syntax
