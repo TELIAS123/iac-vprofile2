@@ -27,7 +27,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "bucket-for-github-teddy"
+    bucket = "bucket-for-github-ohio"
     key    = "terraform.tfstate"
     region = "us-east-2"
   }
