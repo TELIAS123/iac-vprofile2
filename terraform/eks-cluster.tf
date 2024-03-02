@@ -20,9 +20,9 @@ module "eks" {
 
       instance_types = ["t3.small"]
 
-      min_size     = 0
-      max_size     = 0
-      desired_size = 0
+      min_size     = 1
+      max_size     = 1
+      desired_size = 1
     }
 
     two = {
@@ -30,9 +30,9 @@ module "eks" {
 
       instance_types = ["t3.small"]
 
-      min_size     = 0
-      max_size     = 0
-      desired_size = 0
+      min_size     = 1
+      max_size     = 1
+      desired_size = 1
     }
   }
 }
